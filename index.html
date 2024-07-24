@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dich Rumpany Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: rgba(0,0,0,0.87);
+            background-color: #fafafa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 26px;
+        }
+        header {
+            background-color: #3f51b5;
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+        }
+        header img {
+            max-width: 200px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        header img:hover {
+            transform: scale(1.1);
+        }
+        h1, h2, h3 {
+            font-weight: 400;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .project {
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: all 0.6s;
+        }
+        .btn:hover:before {
+            left: 100%;
+        }
+        .btn:hover {
+            background-color: #303f9f;
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+        }
+        footer {
+            background-color: #3f51b5;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        }
+        #about {
+            position: relative;
+        }
+        #about:before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+            z-index: -1;
+            border-radius: 12px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="icon.jpg" alt="Dich Rumpany Team Logo">
+            <h1>Dich Rumpany Team</h1>
+            <p>Инновационные решения для вашего бизнеса</p>
+            <div class="social-links">
+                <a href="#" title="Telegram"><span class="material-symbols-outlined">telegram</span></a>
+                <a href="#" title="YouTube"><span class="material-symbols-outlined">youtube_activity</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="card">
+            <h2>О нас</h2>
+            <p>Dich Rumpany Team - это команда профессионалов, специализирующихся на разработке свободного ПО для настольных компьютеров и телефонов на базе ос Android</p>
+        </section>
+
+        <section id="projects">
+            <h2>Наши проекты</h2>
+            <div class="project card">
+                <h3>язык программирования: Ryton</h3>
+                <p>Новый инновационный язык програмирования с приятным синтаксисом и высокой скоростью работы</p>
+                <a href="https://example.com/ryton" class="btn">Подробнее о проекте</a>
+            </div>
+            <div class="project card">
+                <h3>TrixsCoder-Ultra</h3>
+                <p>дешифратор 2д и 3д графики игр суперселл</p>
+                <a href="https://example.com/trixscoder-ultra" class="btn">Подробнее о проекте</a>
+            </div>
+            <div class="project card">
+                <h3>Block Code {трета тест}</h3>
+                <p>конструктор игр и приложений по средствам визуального программирования, под капотом у которого Ryton</p>
+                <a href="#" class="btn" style="background-color: #888; cursor: not-allowed;">Не доступен</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 - 2024 Dich Rumpany Team. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
